@@ -1,0 +1,428 @@
+/* Buttons */
+.primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: background 120ms ease, transform 120ms ease, box-shadow 120ms ease;
+}
+.primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(108, 92, 231, 0.35);
+}
+
+/* Shared logo */
+.logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: var(--space-md);
+}
+.logo-icon {
+  width: 48px;
+  height: 48px;
+}
+.logo-text {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--text);
+}
+
+/* Welcome Page – portrait, no card */
+.welcome-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: var(--background);
+}
+.welcome-container {
+  width: 100%;
+  max-width: 440px;
+  margin-top: 10vh;
+  padding: 0 var(--space-lg);
+  text-align: center;
+}
+.welcome-logo-icon {
+  width: 72px;
+  height: 72px;
+}
+.welcome-logo-text {
+  font-size: calc(var(--font-size-lg) * 1.5);
+  font-weight: var(--font-weight-bold);
+  color: var(--brand-purple);
+}
+.welcome-logo-row {
+  margin-bottom: var(--space-lg);
+}
+.welcome-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--space-md);
+  color: var(--text);
+}
+.welcome-subtext {
+  font-size: var(--font-size-md);
+  color: var(--muted);
+  margin: var(--space-sm) 0 var(--space-lg);
+  line-height: 1.5;
+}
+.welcome-btn.primary {
+  padding: var(--space-md) var(--space-lg);
+  width: 100%;
+  box-sizing: border-box;
+}
+.demo-link {
+  margin-top: var(--space-md);
+  font-size: var(--font-size-sm);
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Profile Setup – card stays intact */
+.profile-container {
+  max-width: 440px;
+  margin: 10vh auto;
+  padding: var(--space-lg);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.profile-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+.profile-subtext {
+  font-size: var(--font-size-md);
+  color: var(--muted);
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+.profile-input,
+.profile-textarea {
+  width: 100%;
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  box-sizing: border-box;
+}
+.profile-textarea {
+  height: 100px;
+  resize: vertical;
+}
+.profile-btn.primary {
+  width: 100%;
+  padding: var(--space-md);
+}
+
+/* Signup Screen – portrait, no card */
+.signup-container {
+  width: 100%;
+  max-width: 440px;
+  margin: 12vh auto;
+  padding: 0 var(--space-lg);
+  text-align: center;
+}
+.signup-page .logo-icon {
+  width: 72px;
+  height: 72px;
+}
+.signup-page .logo-text {
+  font-size: calc(var(--font-size-lg) * 1.5);
+  color: var(--brand-purple);
+}
+.signup-page .logo-row {
+  margin-bottom: calc(var(--space-lg) * 2);
+}
+
+/* Social buttons */
+.signup-social {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-sm) * 2);
+  margin-bottom: var(--space-lg);
+}
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  color: var(--text);
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+.btn-social:hover {
+  background: #f0f0f0;
+}
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+.social-text {
+  line-height: 1;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin-bottom: var(--space-md);
+  font-size: var(--font-size-sm);
+  color: var(--muted);
+}
+
+/* Inputs and actions */
+.signup-input {
+  width: 100%;
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  color: var(--text);
+}
+.signup-btn {
+  width: 100%;
+  padding: var(--space-md);
+}
+.signup-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+.login-link {
+  font-size: var(--font-size-sm);
+  color: var(--muted);
+  cursor: pointer;
+}
+.link-accent {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.forgot-link {
+  font-size: var(--font-size-sm);
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Login Page – portrait layout */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: var(--background);
+}
+.login-container {
+  width: 100%;
+  max-width: 440px;
+  margin-top: 10vh;
+  padding: 0 var(--space-lg);
+  text-align: center;
+}
+
+/* Logo */
+.login-logo-icon {
+  width: 72px;
+  height: 72px;
+}
+.login-logo-text {
+  font-size: calc(var(--font-size-lg) * 1.5);
+  font-weight: var(--font-weight-bold);
+  color: var(--brand-purple);
+}
+.login-logo-row {
+  margin-bottom: var(--space-lg);
+}
+
+/* Title & subtext */
+.login-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--space-md);
+  color: var(--text);
+}
+.login-subtext {
+  font-size: var(--font-size-md);
+  color: var(--muted);
+  margin: var(--space-sm) 0 var(--space-lg);
+  line-height: 1.5;
+}
+
+/* Inputs */
+.login-input {
+  width: 100%;
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  color: var(--text);
+}
+
+/* Button */
+.login-btn.primary {
+  width: 100%;
+  padding: var(--space-md);
+  box-sizing: border-box;
+}
+
+/* Footer */
+.login-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+.forgot-link {
+  font-size: var(--font-size-sm);
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.login-link {
+  font-size: var(--font-size-sm);
+  color: var(--muted);
+}
+.link-accent {
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Profile Page – card layout */
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: var(--background);
+}
+.profile-container {
+  max-width: 440px;
+  margin: 10vh auto;
+  padding: var(--space-lg);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Logo */
+.profile-logo-icon {
+  width: 72px;
+  height: 72px;
+}
+.profile-logo-text {
+  font-size: calc(var(--font-size-lg) * 1.5);
+  font-weight: var(--font-weight-bold);
+  color: var(--brand-purple);
+}
+.profile-logo-row {
+  margin-bottom: var(--space-lg);
+}
+
+/* Title & subtext */
+.profile-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-sm);
+}
+.profile-subtext {
+  font-size: var(--font-size-md);
+  color: var(--muted);
+  margin-bottom: var(--space-lg);
+}
+
+/* Inputs */
+.profile-input,
+.profile-textarea {
+  width: 100%;
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  box-sizing: border-box;
+}
+.profile-textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Button */
+.profile-btn.primary {
+  width: 100%;
+  padding: var(--space-md);
+  box-sizing: border-box;
+}
+
+/* Error message for validation */
+.error-message {
+  color: red;
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-md);
+}
+/* Error message for validation */
+.error-message {
+  color: red;
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-md);
+}
+
+/* Phone input override for react-phone-input-2 */
+.phone-input-container {
+  margin-bottom: var(--space-md);
+}
+
+.react-tel-input .form-control {
+  width: 100%;
+  height: var(--input-height, 48px);
+  font-size: var(--font-size-md);
+  padding: var(--space-md);
+  padding-left: 56px; /* ensures flag doesn't overlap digits */
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background-color: var(--input-bg);
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+.react-tel-input .flag-dropdown {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background-color: var(--input-bg);
+}
+/* Responsive fix for phone input on desktop */
+@media (min-width: 768px) {
+  .react-tel-input .form-control {
+    padding-left: 64px; /* extra space for flag dropdown */
+    font-size: var(--font-size-md);
+  }
+
+  .react-tel-input .flag-dropdown {
+    width: 56px;
+  }
+}

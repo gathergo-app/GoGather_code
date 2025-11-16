@@ -1,0 +1,29 @@
+:root {
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --text: #1a1f2b;
+  --muted: #6b7280;
+  --primary: #6c5ce7;
+  --primary-hover: #5a4ad6;
+  --border: #e2e8f0;
+  --input-bg: #ffffff;
+  --google-bg: #ffffff;
+  --facebook-bg: #ffffff;
+
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 18px;
+
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --radius-md: 10px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 24px;
+}
+:root {
+  --brand-purple: #6c5ce7;
+  --brand-pink: #fd79a8;
+  --brand-bg: #f5f3ff;
+}
